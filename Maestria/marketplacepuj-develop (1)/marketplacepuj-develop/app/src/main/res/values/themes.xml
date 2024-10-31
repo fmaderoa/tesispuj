@@ -1,0 +1,63 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="Base.Theme.MarketPlacePUJ" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="android:editTextStyle">@style/InputEditText</item>
+        <item name="editTextStyle">@style/InputEditText</item>
+        <item name="android:statusBarColor">@color/colorStatusBar</item>
+    </style>
+
+    <style name="Theme.MarketPlacePUJ" parent="Base.Theme.MarketPlacePUJ" />
+
+    <style name="InputEditText" parent="Widget.AppCompat.EditText">
+        <item name="android:background">@drawable/edittext_bg</item>
+        <item name="android:textColor">@color/inputTextColor</item>
+        <item name="android:textColorHint">@color/inputHintTextColor</item>
+        <item name="android:drawablePadding">16dp</item>
+        <item name="android:textSize">14sp</item>
+        <item name="singleLine">true</item>
+    </style>
+
+    <style name="CartTheme" parent="Base.Theme.MarketPlacePUJ">
+        <item name="android:toolbarStyle">@drawable/edittext_bg</item>
+    </style>
+
+    <style name="SimpleEdittext" parent="InputEditText">
+        <item name="android:background">@drawable/edittext_bg_2</item>
+        <item name="android:textColor">@color/toolbarTextColor</item>
+        <item name="android:textColorHint">@color/inputHintTextColor</item>
+        <item name="android:drawablePadding">16dp</item>
+        <item name="android:textSize">14sp</item>
+        <item name="singleLine">true</item>
+    </style>
+
+    <style name="ToolbarStyle" parent="Widget.MaterialComponents.Toolbar">
+        <item name="android:textAppearance">@style/ToolbarTextAppearance</item>
+    </style>
+
+    <style name="ToolbarTextAppearance" parent="TextAppearance.MaterialComponents.Subtitle1">
+        <item name="android:textSize">25sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="ButtonStyle" parent="Widget.MaterialComponents.Button.UnelevatedButton">
+        <item name="cornerRadius">4dp</item>
+        <item name="android:padding">2dp</item>
+        <item name="android:layout_width">40dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textColor">@color/toolbarTextColor</item>
+        <item name="android:backgroundTint">@color/categoryStrokeColor</item>
+    </style>
+
+    <style name="ButtonsToggleGroupStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+</resources>

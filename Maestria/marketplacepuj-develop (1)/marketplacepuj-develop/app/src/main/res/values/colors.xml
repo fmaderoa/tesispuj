@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="white_50">#80FFFFFF</color>
+    <color name="inputTextColor">@color/white</color>
+    <color name="inputHintTextColor">@color/white_50</color>
+    <color name="inputBorderColor">#b0bbe0</color>
+    <color name="iconEdtColor">@color/inputBorderColor</color>
+    <color name="iconEdtColorDefault">@color/white</color>
+    <color name="colorStatusBar">#6c46be</color>
+    <color name="toolbarTextColor">#4D4D4D</color>
+    <color name="categoryStrokeColor">#FFD180</color>
+    <color name="basicTextColor">#b1b1b1</color>
+    <color name="grayLight">#E7E7E7</color>
+    <color name="orange">#ff8e01</color>
+    <color name="purple">#D0BCFF</color>
+    <color name="historyItemColor">#429eb3</color>
+
+</resources>

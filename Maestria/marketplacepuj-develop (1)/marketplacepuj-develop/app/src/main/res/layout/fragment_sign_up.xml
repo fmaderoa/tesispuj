@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_login"
+    tools:context=".feature.register.view.SignUpFragment">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/materialToolbar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:navigationIcon="@drawable/baseline_arrow_back_24"
+        app:navigationIconTint="@color/white" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="281dp"
+        android:layout_height="192dp"
+        android:layout_marginBottom="32dp"
+        android:src="@drawable/ic_sign_up"
+        app:layout_constraintBottom_toTopOf="@+id/edt_username"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/materialToolbar"
+        app:layout_constraintVertical_bias="0.0"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <com.example.marketplacepuj.core.components.view.CustomEditText
+        android:id="@+id/edt_username"
+        android:layout_width="283dp"
+        android:layout_height="wrap_content"
+        android:drawableStart="@drawable/baseline_account_circle_24"
+        android:hint="@string/text_email"
+        android:inputType="textEmailAddress"
+        app:layout_constraintBottom_toTopOf="@+id/edtPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <com.example.marketplacepuj.core.components.view.CustomEditText
+        android:id="@+id/edtPassword"
+        android:layout_width="283dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:drawableStart="@drawable/pwd_24dp"
+        android:hint="@string/text_password"
+        android:inputType="textPassword"
+        app:layout_constraintBottom_toTopOf="@+id/edtPassword2"
+        app:layout_constraintEnd_toEndOf="@+id/edt_username"
+        app:layout_constraintStart_toStartOf="@+id/edt_username"
+        app:layout_constraintTop_toBottomOf="@+id/edt_username"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <com.example.marketplacepuj.core.components.view.CustomEditText
+        android:id="@+id/edtPassword2"
+        android:layout_width="283dp"
+        android:layout_height="wrap_content"
+        android:drawableStart="@drawable/pwd_24dp"
+        android:hint="@string/text_confirm_password"
+        android:inputType="textPassword"
+        app:layout_constraintBottom_toTopOf="@+id/btn_sign_up"
+        app:layout_constraintEnd_toEndOf="@+id/edtPassword"
+        app:layout_constraintStart_toStartOf="@+id/edtPassword"
+        app:layout_constraintTop_toBottomOf="@+id/edtPassword"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <Button
+        android:id="@+id/btn_sign_up"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:backgroundTint="@color/white"
+        android:text="@string/text_sign_up"
+        android:textColor="#4d4d4d"
+        app:cornerRadius="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/edtPassword2"
+        app:layout_constraintStart_toStartOf="@+id/edtPassword2"
+        app:layout_constraintTop_toBottomOf="@+id/edtPassword2"
+        app:layout_constraintVertical_bias="0.5" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

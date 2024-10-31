@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<inset xmlns:android="http://schemas.android.com/apk/res/android"
+    android:insetLeft="4dp"
+    android:insetTop="4dp"
+    android:insetRight="4dp"
+    android:insetBottom="4dp">
+    <shape
+        android:shape="rectangle">
+        <corners
+            android:bottomLeftRadius="@dimen/edt_corner_radio"
+            android:bottomRightRadius="@dimen/edt_corner_radio"
+            android:topLeftRadius="@dimen/edt_corner_radio"
+            android:topRightRadius="@dimen/edt_corner_radio" />
+
+        <stroke android:color="#e5e5e5" android:width="@dimen/editText_stroke_width_1dp" />
+        <size android:height="@dimen/editText_height" />
+
+        <padding
+            android:left="16dp"
+            android:right="16dp" />
+    </shape>
+</inset>

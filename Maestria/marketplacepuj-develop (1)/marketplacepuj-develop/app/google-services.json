@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "792657649809",
+    "firebase_url": "https://marketplacepuj-default-rtdb.firebaseio.com",
+    "project_id": "marketplacepuj",
+    "storage_bucket": "marketplacepuj.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:792657649809:android:22c4a4c667a5deb5569f30",
+        "android_client_info": {
+          "package_name": "com.example.marketplacepuj"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBFafcLf7gYQPSmOCN4BwovxfNSR498Jo4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

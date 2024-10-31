@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/app_graph"
+    app:startDestination="@id/productsFragment">
+
+    <fragment
+        android:id="@+id/productsFragment"
+        android:name="com.example.marketplacepuj.feature.products.list.view.ProductsFragment"
+        android:label="@string/text_toolbar_products"
+        tools:layout="@layout/fragment_products">
+        <action
+            android:id="@+id/action_productsFragment_to_productDetailActivity"
+            app:destination="@id/productDetailActivity" />
+        <action
+            android:id="@+id/action_productsFragment_to_loginActivity"
+            app:destination="@id/loginActivity" />
+    </fragment>
+    <fragment
+        android:id="@+id/shoppingCartFragment"
+        android:name="com.example.marketplacepuj.feature.cart.view.ShoppingCartFragment"
+        android:label="@string/text_cart"
+        tools:layout="@layout/fragment_dashboard" />
+    <fragment
+        android:id="@+id/userProfileFragment"
+        android:name="com.example.marketplacepuj.feature.profile.view.UserProfileFragment"
+        android:label="@string/text_profile"
+        tools:layout="@layout/fragment_user_profile">
+        <action
+            android:id="@+id/action_userProfileFragment_to_ordersFragment"
+            app:destination="@id/ordersFragment" />
+    </fragment>
+    <activity
+        android:id="@+id/productDetailActivity"
+        android:name="com.example.marketplacepuj.feature.products.detail.ProductDetailActivity"
+        android:label="ProductDetailActivity">
+        <argument
+            android:name="product"
+            app:argType="com.example.marketplacepuj.feature.products.list.view.list.products.entities.Product" />
+    </activity>
+    <activity
+        android:id="@+id/loginActivity"
+        android:name="com.example.marketplacepuj.feature.login.view.LoginActivity"
+        android:label="activity_login"
+        tools:layout="@layout/activity_login" />
+    <fragment
+        android:id="@+id/ordersFragment"
+        android:name="com.example.marketplacepuj.feature.orders.view.OrdersFragment"
+        android:label="Historial de Compras"
+        tools:layout="@layout/fragment_orders" />
+</navigation>
